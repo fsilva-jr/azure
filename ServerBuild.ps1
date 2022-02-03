@@ -5,8 +5,8 @@
 ######################################33
 
 #variables
-$regionalsettingsURL = "https://raw.githubusercontent.com/averkinderen/Azure/master/101-ServerBuild/AURegion.xml"
-$RegionalSettings = "D:\AURegion.xml"
+$regionalsettingsURL = "https://raw.githubusercontent.com/fsilva-jr/azure/main/PTBRRegion.xml"
+$RegionalSettings = "D:\PTBRRegion.xml"
 
 
 #downdload regional settings file
@@ -22,7 +22,7 @@ Set-WinSystemLocale en-US
 Set-WinUserLanguageList -LanguageList en-US -Force
 Set-Culture -CultureInfo en-US
 Set-WinHomeLocation -GeoId 32
-Set-TimeZone -Name "E. Brazil Standard Time"
+Set-TimeZone -Name "E. South America Standard Time"
 
 # restart virtual machine to apply regional settings to current user. You could also do a logoff and login.
 Start-sleep -Seconds 40
